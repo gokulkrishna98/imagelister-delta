@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gokulkrishnam.imagelister.MainActivity">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/myList"
+        android:layout_below="@+id/removeButton"/>
+
+    <EditText
+        android:id="@+id/enterItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="#00f"
+        android:layout_toLeftOf="@+id/myButton"
+        android:hint="Enter Caption"
+        android:textSize="20dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myButton"
+        android:layout_alignParentRight="true"
+        android:id="@+id/removeButton"
+        android:text="Remove"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enterItem"
+        android:layout_toLeftOf="@+id/removeButton"
+        android:hint="Enter position to Remove"
+        android:textSize="20dp"
+        android:id="@+id/removeText"
+        android:textColor="#00f"
+        />
+
+    <Button
+        android:text="Camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="91dp"
+        android:layout_marginEnd="91dp"
+        android:id="@+id/myButton"
+        />
+
+    <Button
+        android:text="Gallery" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/secondButton"
+        />
+
+
+
+</RelativeLayout>
